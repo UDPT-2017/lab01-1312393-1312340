@@ -1,9 +1,17 @@
 var express = require('express');
-
+var ect = require('ect');
 var app = express();
 
-app.get("/",function(req,res){
-  res.send("Hello World, Hi");
+var renderer = ect({
+  root: __dirname + 'views',
+  ext: '.ect'
+})
+
+app.set('view engine','ect');
+app.engine('ect',renderer.render);
+
+app.get("/index",function(req,res){
+  res.render('index');
 });
 
 var port=3001
