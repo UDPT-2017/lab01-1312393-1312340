@@ -1,4 +1,4 @@
-# BT-UDPT-1 - *Name of your app*
+# BT-UDPT-1 - *BLOGLAB1*
 
 **BLOGLAB1** là một bài tập 1 tại môn UDPT.
 
