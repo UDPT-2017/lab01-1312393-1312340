@@ -9,9 +9,20 @@ var renderer = ect({
 
 app.set('view engine','ect');
 app.engine('ect',renderer.render);
+app.set('views','./app/views')
 
-app.get("/index",function(req,res){
-  res.render('index');
+
+app.get("/home",function(req,res){
+  res.render('home');
+});
+app.get("/about",function(req,res){
+  res.render('about');
+});
+app.get("/album",function(req,res){
+  res.render('album');
+});
+app.get("/blog",function(req,res){
+  res.render('blog');
 });
 
 var port=3001
