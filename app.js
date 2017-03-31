@@ -1,10 +1,12 @@
-var http = require("http");
 var express = require('express');
 
-http.createServer(function (request, response) {
+var app = express();
 
-   response.writeHead(200, {'Content-Type': 'text/plain'});
-   response.end('Hello World\n');
-}).listen(8081);
+app.get("/",function(req,res){
+  res.send("Hello World, Hi");
+});
 
-console.log('Server is running at http://127.0.0.1:8081/');
+var port=3001
+app.listen(port,function(){
+  console.log('Server is running at port ' + port);
+});
