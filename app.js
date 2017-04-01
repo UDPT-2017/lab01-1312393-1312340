@@ -9,7 +9,7 @@ var renderer = ect({
 
 app.set('view engine','ect');
 app.engine('ect',renderer.render);
-app.set('views','./app/views')
+app.set('views','./app/views');
 
 
 app.get("/home",function(req,res){
