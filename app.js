@@ -6,7 +6,7 @@ var renderer = ect({
   root: __dirname + 'views',
   ext: '.ect'
 })
-
+app.use(express.static(__dirname + '/app'));
 app.set('view engine','ect');
 app.engine('ect',renderer.render);
 app.set('views','./app/views');
