@@ -444,14 +444,14 @@ nav.sidebar:hover{
 /*Allow main to be next to Nav*/
 .main{
   width: calc(100% - 200px); /*keeps 100% minus nav size*/
-  margin-left: 140px;
+  margin-left: 200px;
 }
 
 /*Show all nav*/
 nav.sidebar{
   margin-left: 0px;
   float: left;
-  width: 120px;
+  width: 200px;
 }
 /*Show hidden items on nav*/
 nav.sidebar .forAnimate{

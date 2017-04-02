@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://blackrockdigital.github.io/startbootstrap-simple-sidebar/css/simple-sidebar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      #map {
+        width: 500px;
+        height: 400px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
 </head>
 
 <body>
@@ -61,20 +70,37 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item active">About</li>
         </ol>
-        <p>aaaaaaaaaa</p>
 
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
-        <p>aaaaaaaaaa</p>
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="images/1312393.jpg" alt="1312393" style="text-align:center; float:left" />
+                <div style="margin-left:320px">
+                    <p>Họ tên : Phùng Hải Nguyên</p>
+                    <p>MSSV : 1312393 </p>
+                    <p>Tài khoản github : 1312393</p>
+                    <p>Emai : 1312393@student.hcmus.edu.vn</p>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <img src="images/1312340.jpg" alt="1312340" style="text-align:center; float:left" />
+                <div style="margin-left:320px">
+                    <p>Họ tên : Lê Quốc Tấn Lộc </p>
+                    <p>MSSV : 1312340 </p>
+                    <p>Tài khoản github : 1312340</p>
+                    <p>Emai : 1312340@student.hcmus.edu.vn</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px">
+          <b> Địa chỉ liên lạc với các thành viên : </b>
+        </div>
+        <div id="map"></div>
+        </br></br></br></br></br>
 
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Designed by 1312393 & 1312415</p>
+                <p class="text-muted" style="text-align:center">Designed by 1312393 & 1312415</p>
             </div>
         </footer>
     </div>
@@ -88,7 +114,16 @@
             $("#wrapper").toggleClass("toggled");
         });
     </script>
-
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 10.762637, lng: 106.682369},
+          zoom: 17
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 
 </html>
