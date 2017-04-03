@@ -27,7 +27,12 @@ app.get("/album",function(req,res){
 app.get("/blog",function(req,res){
   res.render('blog');
 });
-
+app.get("/nguyenalbum",function(req,res){		
+   res.render('nguyenalbum');		
+ });		
+ app.get("/localbum",function(req,res){		
+   res.render('localbum');		
+ });
 var port=3001
 app.listen(port,function(){
   console.log('Server is running at port ' + port);
