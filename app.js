@@ -33,6 +33,12 @@ app.get("/nguyenalbum",function(req,res){
  app.get("/localbum",function(req,res){		
    res.render('localbum');		
  });
+  app.get("/blog/locpost",function(req,res){		
+   res.render('locpost');		
+ });
+   app.get("/blog/nguyenpost",function(req,res){		
+   res.render('nguyenpost');		
+ });
 var port=3001
 app.listen(port,function(){
   console.log('Server is running at port ' + port);
