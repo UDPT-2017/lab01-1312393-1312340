@@ -27,17 +27,17 @@ app.get("/album",function(req,res){
 app.get("/blog",function(req,res){
   res.render('blog');
 });
-app.get("/nguyenalbum",function(req,res){		
-   res.render('nguyenalbum');		
- });		
- app.get("/localbum",function(req,res){		
+app.get("/nguyenalbum",function(req,res){
+   res.render('nguyenalbum');
+ });
+ app.get("/localbum",function(req,res){
    res.render('localbum');		
  });
-  app.get("/blog/locpost",function(req,res){		
-   res.render('locpost');		
+  app.get("/locpost",function(req,res){
+   res.render('locpost');
  });
-   app.get("/blog/nguyenpost",function(req,res){		
-   res.render('nguyenpost');		
+   app.get("/nguyenpost",function(req,res){
+   res.render('nguyenpost');
  });
 var port=3001
 app.listen(port,function(){
